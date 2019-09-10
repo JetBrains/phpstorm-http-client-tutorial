@@ -1,0 +1,17 @@
+{
+    "name": "jetbrains/http-client-tutorial",
+    "description": "",
+    "require": {
+        "ext-json": "*",
+        "php": ">=7.1",
+        "slim/psr7": "^0.5",
+        "slim/slim": "^4.1"
+    },
+    "config": {
+        "process-timeout": 0,
+        "sort-packages": true
+    },
+    "scripts": {
+        "start": "php -S 127.0.0.1:8080"
+    }
+}
