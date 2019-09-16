@@ -7,6 +7,12 @@ require __DIR__ . '/vendor/autoload.php';
 
 $app = AppFactory::create();
 
+$app->add(new Tuupola\Middleware\HttpBasicAuthentication([
+    "users" => [
+        "elephpant" => "I❤️PHP",
+    ]
+]));
+
 $app->get('/api/hello', function (Request $request, Response $response) {
     $name = $request->getQueryParams()['name'];
     $time = date('r');

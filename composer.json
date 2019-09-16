@@ -2,10 +2,11 @@
     "name": "jetbrains/http-client-tutorial",
     "description": "",
     "require": {
-        "ext-json": "*",
         "php": ">=7.1",
+        "ext-json": "*",
         "slim/psr7": "^0.5",
-        "slim/slim": "^4.1"
+        "slim/slim": "^4.1",
+        "tuupola/slim-basic-auth": "^3.2"
     },
     "config": {
         "process-timeout": 0,
