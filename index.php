@@ -9,7 +9,8 @@ $app = AppFactory::create();
 
 $app->get('/api/hello', function (Request $request, Response $response) {
     $name = $request->getQueryParams()['name'];
-    $response->getBody()->write("Hello, {$name}!");
+    $time = date('r');
+    $response->getBody()->write(sprintf("%s: Hello, %s!", $time, $name));
     return $response;
 });
 
