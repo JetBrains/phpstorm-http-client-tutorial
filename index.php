@@ -20,4 +20,18 @@ $app->get('/api/hello', function (Request $request, Response $response) {
     return $response;
 });
 
+$app->get('/api/item', function (Request $request, Response $response) {
+    $todo = file_get_contents('data.json');
+    $response->getBody()->write($todo);
+    $response = $response->withHeader('Content-Type', 'application/json');
+    return $response;
+});
+
+$app->post('/api/item', function (Request $request, Response $response) {
+    $todo = $request->getBody()->getContents();
+    file_put_contents('data.json', $todo);
+    $response = $response->withStatus(204);
+    return $response;
+});
+
 $app->run();
