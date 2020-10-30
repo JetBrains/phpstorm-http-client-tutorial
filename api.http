@@ -18,7 +18,7 @@ GET http://127.0.0.1:8080/api/item
 Accept: application/json
 Authorization: Basic elephpant I❤️PHP
 
-# TODO: Script that reads resonse, modifies it, and saves to storage
+# TODO: Script that reads response, modifies it, and saves to storage
 
 ###
 
