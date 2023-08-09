@@ -1,3 +1,5 @@
+[![JetBrains team project](https://jb.gg/badges/team.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
 # HTTP Client in PhpStorm Tutorial
 
 This repository contains sample code for the HTTP Client overview. You can find the detailed description in the [blog post](https://blog.jetbrains.com/phpstorm/2019/11/http-client-in-phpstorm-overview/) or the [YouTube video](https://www.youtube.com/watch?v=n8KCuKhDSZY).
